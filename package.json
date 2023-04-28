@@ -1,0 +1,17 @@
+{
+  "name": "app.js",
+  "version": "1.0.0",
+  "description": "its a test app",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@tensorflow/tfjs": "^4.2.0",
+    "express": "^4.17.3",
+    "fs": "^0.0.1-security",
+    "nodemon": "^2.0.21"
+  }
+}
