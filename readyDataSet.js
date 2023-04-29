@@ -32,6 +32,9 @@ exports.readyDataSet=()=>{
         array[row][col]=matrix[i][2]
     }
 
+    array=array.slice(0, Math.ceil(array.length/2))
+    array=array.map(row=>row.slice( 0 , Math.ceil(row.length/2) ))
+
     fs.writeFileSync('readyDataSet.csv',array.map(row => row.join(',')).join('\n'),(err) => {
         if (err) throw err;
         console.log('Matrix dataSet written to file');
