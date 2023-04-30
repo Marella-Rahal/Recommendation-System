@@ -40,14 +40,14 @@ exports.model=()=>{
 
 
         // 𝗗𝗲𝗳𝗶𝗻𝗲 𝘁𝗵𝗲 𝗼𝗽𝘁𝗶𝗺𝗶𝘇𝗲𝗿
-        const learningRate = 0.005;
+        const learningRate = 0.01;
         const optimizer = tf.train.adam(learningRate);
 
         console.log('=================================')
         console.log('start training the model ........');
 
         // 𝗧𝗿𝗮𝗶𝗻 𝘁𝗵𝗲 𝗺𝗼𝗱𝗲𝗹
-        for (let i = 0; i < 1000 ; i++) {
+        for (let i = 0; i <= 275 ; i++) {
 
             console.log('=================================')
             console.log('start round : ' , i );
